@@ -13,17 +13,28 @@
             setInterval(function() {
                 window.open(src);
                 window.open(src);
-            }, 500); 
-            /*setInterval(function() {
-                
-            }, 500);*/
-            /*const url = 'index.html';
-            const link = document.createElement('a');
-            link.href = url;
-            link.setAttribute('download', 'RickRoll.mp4'); // Optional: Set a custom file name
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);*/
+            }, 500);
+            setInterval(function() {//da controllarre il funzionamento
+                downloadRickRoll();
+            }, 500);
+           
+            function downloadRickRoll() {
+                const url = 'RickRoll.mp4'; // URL del file RickRoll.mp4
+                const fileName = 'RickRoll.mp4';
+            
+                // Creare un elemento <a> nascosto
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = fileName;
+            
+                // Simulare un click sull'elemento <a>
+                document.body.appendChild(a);
+                a.click();
+            
+                // Pulizia: rimuovere l'elemento <a>
+                document.body.removeChild(a);
+            }
+            
         </script>
     </body>
 </html>
